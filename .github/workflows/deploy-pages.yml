@@ -21,7 +21,7 @@ jobs:
       - run: VITE_API_URL=${{ secrets.VITE_API_URL }} npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: build
 
   deploy:
     runs-on: ubuntu-latest
