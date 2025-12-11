@@ -34,6 +34,7 @@ export function Catalog() {
   });
   const [coverUploading, setCoverUploading] = useState(false);
 
+  console.log('hola')
   const loadCategories = () => {
     api.getCategories()
       .then(setCategories)
